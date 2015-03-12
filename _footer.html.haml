@@ -1,0 +1,28 @@
+.row-fluid
+  .span3
+    %p
+      %strong RankTrail
+      %br
+      c/o TopVisible AB
+      %br
+      Södra förstadsgatan 23 A
+      %br
+      211 43, Malmö
+      %br
+      040 - 616 08 88
+      %br
+      =link_to "info@ranktrail.se", "mailto:info@ranktrail.se"
+  .span5
+    =render :partial => "partials/share_buttons" if Rails.env.production?
+  .span4.call-us
+    .well
+      =image_tag "icons/call.png"
+      %p Ring oss så berättar vi mer!
+      %p.phone-number 040 - 616 08 88
+.row-fluid
+  .span12
+    %p.copyright
+      RankTrail - ©  
+      = Time.new.year
+      TopVisible AB.
+      %a{:href => cookies_url, :target => '_blank' } Läs om cookies här.
