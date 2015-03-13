@@ -4,7 +4,7 @@
 
 	#customers {
 		background: #fbfbf8;
-		padding-bottom: 20px;
+		/*padding-bottom: 20px;*/
 	}
 	
 	h2 {
@@ -23,11 +23,26 @@
 		color: #333333;
 		-webkit-font-smoothing: antialiased !important;
 	}
-
-	.feature-even {
+	
+	.feature-even, 
+	.feature-evens, 
+	.feature-odds, 
+	.feature-more-odds, {
 		border-bottom: 1px solid #d3e1d2;
 		background: #e8f5e7;
 		height: 354px;
+	}	
+	
+	.feature-more-evens, 
+	.feature-odd  {
+		border-bottom: 1px solid #e5e5e5;
+		background: #fbfbf8;
+		height: 354px;
+	}
+	
+	.feature-even, 
+	.feature-evens, 
+	.feature-more-evens {
 		img {
 			position: relative;
 			height: 294px;
@@ -35,79 +50,10 @@
 			top: 60px;
 			left: -20.1px;	
 		}
-		h2 {
-			position: relative;
-			width: 460px;
-			height: 44px;
-			top: -244px;
-			left: 432.3px;	
-		}
-		p {
-			position: relative;
-			width: 468px;
-			height: 132px;
-			top: -210px;
-			left: 432.3px;	
-		}
 	}
-
-	.feature-evens {
-		border-bottom: 1px solid #d3e1d2;
-		background: #e8f5e7;
-		height: 354px;
-		img {
-			position: relative;
-			height: 294px;
-			width: 468px;
-			top: 60px;
-			left: -20.3px;	
-		}
-		h2 {
-			position: relative;
-			width: 468px;
-			height: 44px;
-			top: -244px;
-			left: 432.3px;	
-		}
-		p {
-			position: relative;
-			width: 468px;
-			top: -254px;
-			left: 432.3px;
-		}
-	}
-
-	.feature-more-evens {
-		border-bottom: 1px solid #e5e5e5;
-		background: #fbfbf8;
-		height: 354px;
-		img {
-			position: relative;
-			height: 294px;
-			width: 468px;
-			top: 60px;
-			left: -20.3px;	
-		}
-		p {
-			position: relative;
-			width: 460px;
-			height: 132px;
-			top: -254px;
-			left: 432.3px;	
-		}
-		h2 {
-			position: relative;
-			width: 460px;
-			height: 44px;
-			top: -244px;
-			left: 432.3px;	
-		}
-	}
-
-	.feature-odd {
-		border-bottom: 1px solid #e5e5e5;
-		background: #fbfbf8;
-		height: 354px;
+	
+	.feature-odd, 
+	.feature-more-odds {
 		img {
 			position: relative;
 			height: 294px;
@@ -115,26 +61,9 @@
 			top: -146px;
 			left: 432.3px;
 		}
-		h2 {
-			position: relative;
-			width: 460px;
-			height: 44px;
-			top: 50px;
-			left: -20px;	
-		}
-		p {
-			position: relative;
-			width: 460px;
-			height: 132px;
-			top: 84px;
-			left: -20px;	
-		}
 	}
 
 	.feature-odds {
-		border-bottom: 1px solid #d3e1d2;
-		background: #e8f5e7;
-		height: 354px;
 		img {
 			position: relative;
 			height: 294px;
@@ -142,6 +71,23 @@
 			top: -156px;
 			left: 432.25px;
 		}
+	}
+	
+	.feature-even, 
+	.feature-evens, 
+	.feature-more-evens {
+		h2 {
+			position: relative;
+			width: 468px;
+			height: 44px;
+			top: -244px;
+			left: 432.3px;	
+		}
+	}
+
+	.feature-odd, 
+	.feature-odds, 
+	.feature-more-odds {
 		h2 {
 			position: relative;
 			width: 460px;
@@ -149,6 +95,37 @@
 			top: 50px;
 			left: -20px;	
 		}
+	}
+	
+	.feature-even {
+		p {
+			position: relative;
+			width: 468px;
+			top: -210px;
+			left: 432.3px;	
+		}
+	}
+	
+	.feature-evens, 
+	.feature-more-evens {
+		p {
+			position: relative;
+			width: 468px;
+			top: -254px;
+			left: 432.3px;
+		}
+	}
+
+	.feature-odd {
+		p {
+			position: relative;
+			width: 460px;
+			top: 84px;
+			left: -20px;	
+		}
+	}
+	
+	.feature-odds  {
 		p {
 			position: relative;
 			width: 468px;
@@ -158,23 +135,6 @@
 	}
 
 	.feature-more-odds {
-		border-bottom: 1px solid #d3e1d2;
-		background: #e8f5e7;
-		height: 354px;
-		img {
-			position: relative;
-			height: 294px;
-			width: 468px;
-			top: -146px;
-			left: 432.25px;
-		}
-		h2 {
-			position: relative;
-			width: 460px;
-			height: 44px;
-			top: 50px;
-			left: -20px;	
-		}
 		p {
 			position: relative;
 			width: 460px;
@@ -183,7 +143,7 @@
 			left: -20px;	
 		}
 	}
-
+	
 	#call-to-action {
 	  	border-bottom: 1px solid #e5e5e5;
 		background: #fbfbf8;
